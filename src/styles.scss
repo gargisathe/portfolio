@@ -16,3 +16,191 @@
 @import "./sass/sections/contact";
 @import "./sass/sections/hero";
 @import "./sass/sections/projects";
+
+
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #000;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  text-align: left;
+  max-width: 1200px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-body {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.modal-body p {
+  margin: 1.2rem;
+  text-indent: 0;
+}
+
+/* Bullet point sections */
+// .bullet-section {
+//   margin: 1.5rem 0;
+//   clear: both;
+// }
+
+// .bullet-section h4 {
+//   color: #2c3e50;
+//   font-size: 1.8rem;
+//   font-weight: 600;
+//   margin-bottom: 0.8rem;
+//   padding-bottom: 0.3rem;
+// line-height: 2.5;
+// }
+
+// .bullet-section ul {
+//   padding-left: 1.8rem;
+//   margin-bottom: 1rem;
+// }
+
+// .bullet-section li {
+//   margin-bottom: 0.8rem;
+//   line-height: 1.6;
+// }
+
+// .bullet-section li strong {
+//   color: #2c3e50;
+//   font-weight: 600;
+// }
+
+/* Image wrapping styles */
+.wrap-img {
+  // width: 280px;
+  height: 200px;
+  margin: 1.5rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  // object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.wrap-img:hover {
+  transform: scale(1.02);
+}
+
+.wrap-img.right {
+  float: right;
+  clear: right;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.wrap-img.left {
+  float: left;
+  clear: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Modal Button Styling */
+.modal-button {
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+/* Project button container */
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-buttons .cta-btn {
+  flex: 0 0 auto;
+}
+
+/* Ensure proper clearing */
+.modal-content::after,
+.modal-body::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.wrap-img {
+  max-width: 50%; 
+  max-height: 70vh;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+  
+  .modal-content {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+  }
+  
+  .modal-body {
+    text-align: left;
+  }
+  
+  .project-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .project-buttons .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Typography improvements */
+.modal-body strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.modal-content .project-wrapper__text-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  margin:1.5rem;
+}

@@ -51,7 +51,7 @@
         <h1 class="hero-title load-hidden">
           Hi! My name is <span class="text-color-main">Gargi</span>
           <br />
-          I'm an AI Engineer and a Product Manager.
+          I'm a Product Manager and an AI Engineer.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -109,320 +109,361 @@
     </section>
     <!-- /END About Section -->
 
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">AI work</h2>
+<!-- **** Projects Section **** -->
+  <section id="projects">
+  <div class="container">
+    <div class="project-wrapper">
+      <h2 class="section-title dark-blue-text">AI work</h2>
 
-                    <!-- Notice: each .row is a project -->
-          <div class="row align-items-center">
-            <div class="col-lg-7 col-sm-12 order-lg-1 order-2">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  Technical Product @ Uplaud. Inc
-                </h3>
-                <ul>
-                  <li>
-                    <strong>Problem:</strong> Lack of authenticated reviews,
-                    leading to opaque lead generation for SMBs. No
-                    community‑based, non‑paid/ad‑free culture for business
-                    reviews and referrals.
-                  </li>
-                  <li>
-                    <strong>Role:</strong> Technical Product Management Intern
-                  </li>
-                  <li>
-                    <strong>Approach:</strong>
-                    <ul>
-                      <li>
-                        Leveraged WhatsApp to build and reach a maximum
-                        word‑of‑mouth community for SMBs.
-                      </li>
-                      <li>
-                        Developed a low‑code, quick‑deploy agentic system
-                        handling three feature flows:
-                        <ul>
-                          <li>
-                            Business discovery flow: agentic prompts guide users
-                            to find and explore SMB offerings.
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            Review submission flow: streamlined, authenticated
-                            review collection within WhatsApp.
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            Referral forwarding flow: easy, in‑chat sharing to
-                            drive warm introductions.
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        Built a backend for business display and an analytics
-                        page to surface performance insights.
-                      </li>
-                      <li>
-                        Owned retention features end‑to‑end: from PRD definition
-                        through development and launch.
-                      </li>
-                      <li>
-                        Integrated GPT‑40 Nano to power an automated scheduler
-                        system for timely nudges, closing the feedback loop.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Impact:</strong> Onboarded 3+ businesses within 15
-                    days of system launch. Launching to 1,000 beta users,
-                    driving early traction and community growth. Tracked DAU and
-                    review volume as north‑star metrics to measure adoption and
-                    engagement
-                  </li>
-                  <li>
-                    <strong>Tech:</strong> Airtable Automation, Whatsapp API,
-                    Make.com, OpenAI, Gemini, NodeJS
-                  </li>
-                </ul>
-
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://uplaud.ai/"
-                >
-                  Website
-                </a>
-                <!-- <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a> -->
-              </div>
-            </div>
-            <div class="col-lg-5 col-sm-12 order-lg-2 order-1">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/uplaud_asset.png"
-                    />
-                  </div>
-                </a>
-              </div>
+      <!-- PROJECT 1 - UPLAUD -->
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-sm-12 order-lg-1 order-2">
+          <div class="project-wrapper__text load-hidden">
+            <h3 class="project-wrapper__text-title">Technical Product @ Uplaud. Inc</h3>
+            <p>
+              <strong>Problem:</strong> Lack of authenticated reviews,
+              leading to opaque lead generation for SMBs. No
+              community‑based, non‑paid/ad‑free culture for business
+              reviews and referrals.
+            </p>
+            <div class="project-buttons">
+              <button
+                class="cta-btn cta-btn--hero modal-button"
+                onclick="openModal('uplaud-modal')"
+                type="button"
+              >
+                How do we solve this?
+              </button>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="cta-btn text-color-main"
+                href="https://uplaud.ai/"
+              >
+                Visit Website
+              </a>
             </div>
           </div>
-          <!-- /END Project -->
-
-
-          <!-- Notice: each .row is a project -->
-          <div class="row align-items-center">
-            <div class="col-lg-7 col-sm-12 order-lg-1 order-2">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">InsureEase</h3>
-                <ul>
-                  <li>
-                    <strong>Problem:</strong> Dual-sided confusion about
-                    insurance coverage for procedures, especially among 65+
-                    Medicare beneficiaries. Clinics lacked a quick verification
-                    tool.
-                  </li>
-                  <li><strong>Role:</strong> Product Manager & AI Engineer</li>
-                  <li>
-                    <strong>Approach:</strong>
-                    <ul>
-                      <li>
-                        Scoped MVP focused on parsing and comparing Evidence of
-                        Coverage (EOC) documents.
-                      </li>
-                      <li>
-                        Built ingestion → indexing → comparison pipeline with
-                        dual RAG and ReAct agents.
-                      </li>
-                      <li>
-                        Used OpenAI and Gemini for reasoning + Neo4j for
-                        structured retrieval.
-                      </li>
-                      <li>
-                        Enabled follow-up queries and email transcripts for
-                        users.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Impact:</strong> Reduced EOC processing time from 15
-                    minutes to 90 seconds. Indexed 10+ documents. Demo built for
-                    under $10.
-                  </li>
-                  <li>
-                    <strong>Tech:</strong> OpenAI o4-mini-high, Gemini Flash
-                    1.5, Neo4j, Qdrant, Node.js, EmailJS
-                  </li>
-                </ul>
-
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://insure-ease-gcth68ee1-gargis-projects-789e5dbd.vercel.app/"
-                >
-                  Source Code
-                </a>
-                <!-- <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a> -->
-              </div>
-            </div>
-            <div class="col-lg-5 col-sm-12 order-lg-2 order-1">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/insureease_asset.png"
-                    />
-                  </div>
-                </a>
-              </div>
+        </div>
+        <div class="col-lg-5 col-sm-12 order-lg-2 order-1">
+          <div class="project-wrapper__image load-hidden">
+            <div class="thumbnail rounded js-tilt">
+              <img
+                alt="Uplaud Project"
+                class="img-fluid"
+                src="assets/uplaud_asset.png"
+              />
             </div>
           </div>
-
-          <!-- /END Project -->
-
-
-          <!-- Notice: each .row is a project -->
-          <div class="row align-items-center">
-            <div class="col-lg-7 col-sm-12 order-lg-1 order-2">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  Distributed system LLM
-                </h3>
-                <ul>
-                  <li>
-                    <strong>Problem:</strong> Building a scalable, end‑to‑end
-                    pipeline to preprocess large text corpora for LLM training
-                    and serve interactive conversational AI, all while learning
-                    cloud‑native distributed computing tools.
-                  </li>
-                  <li><strong>Role:</strong> ML cloud engineer</li>
-                  <li>
-                    <strong>Approach:</strong>
-                    <ul>
-                      <li>
-                        Data processing: Implemented custom Hadoop MapReduce
-                        jobs to tokenize text, compute embeddings and summary
-                        statistics (e.g. token counts, co‑occurrence matrices).
-                      </li>
-                      <li>
-                        Local testing & deployment: Ran and validated MapReduce
-                        workflows on a single‑node Hadoop cluster, then packaged
-                        and deployed to AWS Elastic MapReduce (EMR).
-                      </li>
-                      <li>
-                        Model inference service: Wrapped the trained LLM (using
-                        ND4J’s argMax for next‑token prediction) in a RESTful
-                        microservice built with Akka HTTP, exposing endpoints
-                        for text generation.
-                      </li>
-                      <li>
-                        Conversational client: Developed a client (Postman
-                        scripts or cURL/Scala HTTP client) that chains
-                        microservice calls and a locally‑hosted Ollama model to
-                        sustain multi‑turn dialogues.
-                      </li>
-                      <li>
-                        Documentation: Captured every step—cluster spins, EMR
-                        console, code execution and endpoint testing—in a
-                        narrated screencast and shared via YouTube, linked in
-                        the README.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Impact:</strong> Interactive AI service: Delivered a
-                    working conversational agent, demonstrating seamless
-                    integration of big‑data processing with LLM
-                    inference.Standalone replicability: As the sole developer, I
-                    achieved a fully self‑documented, repeatable pipeline that I
-                    can re‑execute or extend at will.
-                  </li>
-                  <li>
-                    <strong>Tech:</strong> Apache Hadoop (MapReduce), AWS EMR,
-                    Scala/Java, ND4J for tensor ops, Akka HTTP for RESTful model
-                    serving, Ollama for local inference, custom ND4J predictor,
-                    Postman, cURL, Scala HTTP client scripts.
-                  </li>
-                </ul>
-
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://github.com/gargisathe/LLM_AWS"
-                >
-                  Source Code
-                </a>
-                <!-- <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a> -->
-              </div>
-            </div>
-            <div class="col-lg-5 col-sm-12 order-lg-2 order-1">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/llm_2.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
         </div>
       </div>
-    </section>
-    <!-- /END Projects Section -->
+
+      <!-- Modal Structure for Uplaud -->
+      <div id="uplaud-modal" class="custom-modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal('uplaud-modal')">&times;</span>
+          <h3 class="project-wrapper__text-title">Technical Product @ Uplaud. Inc</h3>
+
+          <div class="modal-body">
+            <img src="assets/uplaud_1.png" class="wrap-img right" alt="Uplaud Dashboard" />
+            
+            <p><strong>The Challenge:</strong> Small and medium businesses (SMBs) struggled with opaque lead generation due to a lack of authenticated reviews. There was no community-based, ad-free platform where businesses could build genuine word-of-mouth referrals and reviews.</p>
+
+            <p><strong>My Role:</strong> Technical Product Management Intern - I owned the entire product development cycle from concept to launch, focusing on creating a seamless user experience within WhatsApp's ecosystem.</p>
+
+            <img src="assets/uplaud_2.png" class="wrap-img left" style="width: auto; height: auto; max-width: 30%;" alt="WhatsApp Integration" />
+
+            <p><strong>The Solution:</strong> I designed and built a low-code, agentic AI system that transformed WhatsApp into a discovery and engagement platform for small businesses. The system supported three core user flows and was built with rapid iteration, metric ownership, and scalable architecture in mind.
+
+The core innovation was a closed-loop retention engine powered by LLMs, which enabled proactive, personalized nudges and intelligent re-engagement — all operating within WhatsApp’s constraints.</p>
+
+            
+              <h2><strong>Core Features Delivered:</strong></h2>
+              <ul>
+                <li><strong>Business Discovery Flow:</strong> Used conversational AI prompts to guide users through personalized SMB exploration. The experience mimicked local word-of-mouth interactions with dynamic LLM-generated suggestions based on user behavior. </li>
+                <li><strong>Review Submission Flow:</strong> Streamlined review collection within WhatsApp using authenticated user flows. Collected structured feedback via AI-generated summaries and metadata classification. </li>
+                <li><strong>Referral Forwarding Flow:</strong> Built frictionless in-chat sharing of reviews and business profiles, generating viral growth loops with minimal user friction. </li>
+                <li><strong>Analytics Dashboard:</strong> Created a centralized Airtable-based dashboard tracking DAU, WOM scores, nudge conversion rates, and review/referral growth over time. Enabled real-time insights for internal teams.</li>
+              </ul>
+            
+
+            <img src="assets/uplaud_3.png" class="wrap-img right" alt="Analytics Dashboard" />
+
+                          <h2><strong>Ownership & Leadership:</strong></h2>
+              <ul>
+                <li> Owned end-to-end retention and re-engagement strategy, from PRD definition through MVP launch. </li>
+                <li> Designed the retention engine as a standalone agentic pipeline, integrated seamlessly into the WhatsApp flow. </li>
+                <li> Managed internal rollout and analytics setup, ensuring the system tracked user behavior, measured effectiveness, and adapted to real-world usage patterns. </li>
+                <li> Defined product success metrics and drove weekly iterative improvements using user-level funnel analysis.</li>
+              </ul>
+
+
+
+              <h2><strong>Technical Implementation:</strong></h2>
+              <ul>
+                <li><strong>Backend Architecture:</strong> Built comprehensive system using Airtable for data management and WhatsApp Cloud API integration. </li>
+                <li><strong>Automation Pipeline:</strong> Leveraged Make.com for workflow automation and seamless API orchestration. </li>
+                <li><strong>AI Integration:</strong> Incorporated both OpenAI and Gemini models for natural language processing and conversation flow. </li>
+                <li><strong>Retention System:</strong> Integrated GPT-4 powered automated scheduler for timely user engagement nudges. </li>
+              </ul>
+           
+
+            <!-- <p><strong>Ownership & Leadership:</strong> I owned the complete retention strategy from PRD definition through development and launch, establishing a closed-loop engagement system that drove sustainable user growth.</p> -->
+
+            <img src="assets/uplaud_4.png" class="wrap-img left" alt="User Engagement Metrics" />
+
+            
+              <h2><strong>Results & Impact:</strong></h2>
+              <ul>
+                <li>Deployed MVP to 1,000+ beta users across 3 business verticals. </li>
+                <li>Reduced review friction to under 2 minutes per user via AI-guided summaries. </li>
+                <li>Achieved organic referral loops by surfacing shareable content via agentic prompts. </li>
+                <li>Laid the groundwork for future monetization through lead attribution and SMB dashboards. </li>
+                <li>Contributed directly to strategic decisions in roadmap planning and GTM experimentation. </li>
+              </ul>
+          
+
+            <p><strong>Technical Stack:</strong> Airtable Automation, WhatsApp Cloud API, Make.com, OpenAI GPT-4, Gemini, Node.js</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 - INSUREEASE -->
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-sm-12 order-lg-1 order-2">
+          <div class="project-wrapper__text load-hidden">
+            <h3 class="project-wrapper__text-title">InsureEase</h3>
+            <p>
+              <strong>Problem:</strong> Dual-sided confusion about insurance
+              coverage for procedures, especially among 65+ Medicare
+              beneficiaries. Clinics lacked a quick verification tool.
+            </p>
+            <div class="project-buttons">
+              <button
+                class="cta-btn cta-btn--hero modal-button"
+                onclick="openModal('insureease-modal')"
+                type="button"
+              >
+                How did I solve it?
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-12 order-lg-2 order-1">
+          <div class="project-wrapper__image load-hidden">
+            <div class="thumbnail rounded js-tilt">
+              <img
+                alt="InsureEase Project"
+                class="img-fluid"
+                src="assets/insureease_asset.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Structure for InsureEase -->
+      <div id="insureease-modal" class="custom-modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal('insureease-modal')">&times;</span>
+          <h3 class="project-wrapper__text-title">InsureEase</h3>
+
+          <div class="modal-body">
+            <img src="assets/insureease_asset.png" class="wrap-img right" alt="InsureEase Interface" />
+            
+            <p><strong>The Problem:</strong> Medicare beneficiaries and clinic staff struggled to interpret complex Evidence of Coverage (EOC) documents. This led to delays in treatment, billing errors, and patient frustration over unclear coverage.</p>
+
+            <p><strong>My Role:</strong> Product Manager & AI Engineer - I led the product end-to-end — from identifying user pain points to shipping a live agentic AI system capable of parsing, comparing, and explaining Medicare coverage. I owned both product decisions and technical implementation.</p>
+
+            <img src="assets/insureease_architecture.png" class="wrap-img left" alt="Document Processing Pipeline" />
+
+            <p><strong>Strategic Approach:</strong> To address the complexity, I scoped an MVP focused on:
+<ul>
+<li>Extracting and interpreting critical coverage information from Medicare EOC PDFs. </li>
+
+<li>Enabling comparisons between plans and recommending optimal options based on user inputs. </li>
+
+<li>Reducing time-to-answer for key questions like:
+“Is X procedure covered under Plan Y?”
+“What plan is best for my needs?”
+“Does this cover terminal illness?” </li>
+
+<li>We validated this through real-world queries from patients and clinic staff and tracked clarity rates and session types. </li>
+</ul>
+</p>
+
+            
+                <h2><strong>Ownership & Leadership:</strong></h2>
+              <ul>
+                <li><strong>Defined Strategic Problem Space through Direct User Research:</strong>I identified the real-world challenge of insurance opacity through direct interviews with Medicare beneficiaries and clinic staff. From there, I scoped the MVP, defined product goals, and led the initiative end-to-end. </li>
+                <li><strong>Cross-Functional Execution:</strong> Orchestrated cross-functional alignment across AI engineering, deployment, and user research, translating user needs into technical priorities. Balanced tradeoffs between LLM accuracy, latency, and cost efficiency while ensuring a seamless end-user experience.
+
+</li>
+                <li><strong>AI System Design & Orchestration</strong> Co-architected the dual-agent RAG pipeline and coordinated OpenAI + Gemini integration — including model selection, prompt tuning, and failover logic. Developed the reasoning engine and comparison flow from scratch. </li>
+                <li> Defined product success metrics and drove weekly iterative improvements using user-level funnel analysis.</li>
+              </ul>
+              
+              <h2><strong>Technical Architecture:</strong></h2>
+              <ul>
+                <li><strong>Document Parser:</strong> Built a custom parser using PyMuPDF with GPT-4 to handle diverse EOC layouts. </li>
+                <li><strong>Vector & Graph Search:</strong> <ul><li>Qdrant used for semantic similarity search</li><li>Neo4j stored structured entities (plans, procedures, conditions, codes). </li></ul></li>
+                <li><strong> Dual RAG Pipeline:</strong> Combined vector and knowledge graph lookups for enhanced context. </li>
+                <li><strong>Reasoning layer:</strong> <ul><li>ReAct-style (Reasoning and Action) agents orchestrated by GPT-4 and Gemini. </li> <li>Used for understanding user query, reasoning which tool to use and then taking the action of utilizing tool.</li></ul>Utilized Neo4j for structured knowledge representation and relationship mapping. </li>
+                <li><strong>Multi-Document Comparison Engine:</strong> Enabled side-by-side plan assessments using LLM-mediated entity mapping and coverage alignment. </li>
+                <li><strong>Deployment:</strong> Served via Vercel frontend, backed by Dockerized microservices. </li>
+              </ul>
+           
+
+            <img src="assets/insureease_architecture.png" class="wrap-img right" alt="Comparison Results" />
+
+            
+              <h2><strong>AI Models & Integration:</strong></h2>
+              <ul>
+                <li><strong>OpenAI o4-mini-high:</strong> Primary reasoning engine for complex insurance logic and natural language understanding. </li>
+                <li><strong>Gemini Flash 1.5:</strong> Secondary model for document processing and cross-validation of results. </li>
+                <li><strong>Vector Search:</strong> Qdrant implementation for semantic similarity and fast document retrieval. </li>
+                <li><strong>Follow-up System:</strong> EmailJS integration for automated transcript delivery and user communication. </li>
+              </ul>
+            
+
+            <p><strong>User Experience Design:</strong> Created an intuitive interface that allows users to upload EOC documents, ask natural language questions about coverage, bookmark answers and have TTS (text-to-speech) and STS (speech to text) options.</p>
+
+            <img src="assets/analyse_tool.png
+            " class="wrap-img left" alt="Performance Metrics" />
+
+            
+              <h2><strong>Results & Performance:</strong></h2>
+              <ul>
+                <li><strong>Processing Speed:</strong> Reduced EOC analysis time from 15 minutes to 90 seconds (90% improvement). </li>
+                <li><strong>Document Coverage:</strong> Successfully indexed and processed 10+ diverse Medicare EOC documents. </li>
+                <li><strong>Cost Efficiency:</strong> Built and deployed entire demo system for under $10 in cloud costs. </li>
+                <li><strong>Accuracy:</strong> Achieved high precision in coverage determination through dual-model validation. </li>
+              </ul>
+            
+
+            <p><strong>Impact:</strong> The system demonstrated significant potential for reducing healthcare administrative burden while improving patient understanding of their insurance coverage. The project showcased how AI can make complex regulatory documents accessible to everyday users. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 - DISTRIBUTED SYSTEM LLM -->
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-sm-12 order-lg-1 order-2">
+          <div class="project-wrapper__text load-hidden">
+            <h3 class="project-wrapper__text-title">Distributed System LLM</h3>
+            <p>
+              <strong>Problem:</strong> Building a scalable, end‑to‑end
+              pipeline to preprocess large text corpora for LLM training
+              and serve interactive conversational AI using cloud‑native distributed computing.
+            </p>
+            <div class="project-buttons">
+              <button
+                class="cta-btn cta-btn--hero modal-button"
+                onclick="openModal('distributed-llm-modal')"
+                type="button"
+              >
+                See Technical Details
+              </button>
+              <a 
+                rel="noreferrer"
+                target="_blank"
+                class="cta-btn text-color-main"
+                href="https://github.com/gargisathe/LLM_AWS"
+              >
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-12 order-lg-2 order-1">
+          <div class="project-wrapper__image load-hidden">
+            <div class="thumbnail rounded js-tilt">
+              <img
+                alt="Distributed LLM Project"
+                class="img-fluid"
+                src="assets/llm_2.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Structure for Distributed LLM -->
+      <div id="distributed-llm-modal" class="custom-modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal('distributed-llm-modal')">&times;</span>
+          <h3 class="project-wrapper__text-title">Distributed System LLM</h3>
+
+          <div class="modal-body">
+            <img src="assets/llm_2.png" class="wrap-img right" alt="Hadoop Cluster Architecture" />
+            
+            <p><strong>The Challenge:</strong> Building a scalable, end-to-end pipeline to preprocess large text corpora for LLM training while learning and implementing cloud-native distributed computing technologies for real-world AI applications.</p>
+
+            <p><strong>My Role:</strong> ML Cloud Engineer - As the sole developer, I architected and implemented the distributed system from data processing through model serving .</p>
+
+            <!-- <img src="assets/llm_2.png" class="wrap-img left" alt="MapReduce Pipeline" /> -->
+
+            
+              <h2><strong>Data Processing Architecture:</strong></h2>
+              <ul>
+                <li><strong>Custom MapReduce Jobs:</strong> Implemented Hadoop MapReduce workflows for large-scale text tokenization and preprocessing. </li>
+                <li><strong>Embedding Computation:</strong> Built distributed embedding generation pipeline with statistical analysis capabilities. </li>
+                <li><strong>Co-occurrence Analysis:</strong> Developed MapReduce jobs for computing token co-occurrence matrices and language patterns. </li>
+                <li><strong>Summary Statistics:</strong> Generated comprehensive corpus statistics including token counts and frequency distributions. </li>
+              </ul>
+            
+
+            <p><strong>Cloud Deployment Strategy:</strong> I validated all MapReduce workflows on a single-node Hadoop cluster for development, then seamlessly packaged and deployed the entire pipeline to AWS Elastic MapReduce (EMR) for production-scale processing.</p>
+
+            <!-- <img src="assets/llm_2.png" class="wrap-img right" alt="Model Serving Architecture" /> -->
+
+            
+              <h2><strong>Model Inference & Serving:</strong></h2>
+              <ul>
+                <li><strong>LLM Integration:</strong> Wrapped trained language model with ND4J's argMax implementation for next-token prediction. </li>
+                <li><strong>Microservice Architecture:</strong> Built RESTful inference service using Akka HTTP with scalable endpoint design. </li>
+                <li><strong>API Design:</strong> Exposed clean REST endpoints for text generation with proper error handling and response formatting. </li>
+                <li><strong>Performance Optimization:</strong> Implemented efficient tensor operations and memory management for production workloads. </li>
+              </ul>
+            
+
+            <img src="assets/LLM_1.png" class="wrap-img left" alt="Conversational Client" />
+
+            
+              <h2><strong>Conversational AI Implementation:</strong></h2>
+              <ul>
+                <li><strong>Multi-turn Dialogue:</strong> Developed client system capable of sustaining coherent conversations across multiple exchanges. </li>
+                <li><strong>Hybrid Architecture:</strong> Integrated locally-hosted Ollama model with cloud-based inference for optimal performance. </li>
+                <li><strong>API Orchestration:</strong> Built sophisticated request chaining system using Postman scripts and Scala HTTP clients. </li>
+                <li><strong>State Management:</strong> Implemented conversation context preservation across service calls. </li>
+              </ul>
+            
+
+            <p><strong>Documentation & Reproducibility:</strong> Created comprehensive documentation including step-by-step cluster setup, EMR console navigation, code execution, and endpoint testing. All processes were captured in narrated screencasts and shared via YouTube for complete reproducibility.</p>
+
+            <!-- <img src="assets/llm_2.png" class="wrap-img right" alt="System Performance" /> -->
+
+            
+               <h2><strong>Results & Technical Achievement:</strong></h2>
+              <ul>
+                <li><strong>Interactive AI Service:</strong> Delivered fully functional conversational agent demonstrating seamless big-data and LLM integration. </li>
+                <li><strong>Scalable Architecture:</strong> Achieved production-ready distributed system capable of handling large-scale text processing. </li>
+                <li><strong>Cost Efficiency:</strong> Optimized AWS EMR usage for minimal cloud costs while maintaining high performance. </li>
+                <li><strong>Standalone Replicability:</strong> Created completely self-documented, repeatable pipeline for future extensions. </li>
+              </ul>
+            
+
+            <p><strong>Technical Innovation:</strong> This project successfully bridged the gap between traditional big-data processing and modern AI inference, creating a robust foundation for enterprise-scale conversational AI applications.</p>
+
+            <p><strong>Tech Stack:</strong> Apache Hadoop (MapReduce), AWS EMR, Scala/Java, ND4J, Akka HTTP, Ollama, Postman, cURL</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /END Projects Section -->
 
     <!-- **** RESEARCH AND PRESENTATIONS Section **** -->
     <section id="projects">
@@ -648,5 +689,38 @@
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
+    <script>
+      function openModal(id) {
+  document.getElementById(id).style.display = "block";
+  document.body.style.overflow = "hidden"; // Prevent background scrolling
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+  document.body.style.overflow = "auto"; // Restore scrolling
+}
+
+// Close modal when clicking outside
+window.onclick = function (event) {
+  document.querySelectorAll(".custom-modal").forEach((modal) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+};
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    document.querySelectorAll(".custom-modal").forEach((modal) => {
+      if (modal.style.display === "block") {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    });
+  }
+});
+    </script>
   </body>
 </html>
